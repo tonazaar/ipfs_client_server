@@ -1,8 +1,10 @@
 const express = require('express');
 const ipfsClient = require('ipfs-http-client');
 /*
- "API": "/ip4/0.0.0.0/tcp/5001",
- "API": "/ip4/0.0.0.0/tcp/5002",
+ * https://github.com/ipfs/js-ipfs-http-client
+ * https://github.com/ipfs/js-ipfs/tree/master/examples/running-multiple-nodes
+ * "API": "/ip4/0.0.0.0/tcp/5001",
+ * "API": "/ip4/0.0.0.0/tcp/5002",
 */
 const ipfs1 = ipfsClient('http://localhost:5001');
 const ipfs2 = ipfsClient('http://localhost:5002');

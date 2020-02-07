@@ -29,3 +29,34 @@ node measure.js
 
 
 ```
+
+6) Two nodes in one node.js app
+
+```
+node twonodeselfprogram.js
+
+```
+
+To check if it is working
+
+```
+node command2repo.js
+
+```
+Expected to fail
+
+7) Two nodes in one node.js app, reachable by clients
+
+```
+node twonodeservingprogram.js
+
+```
+
+To check if it is working
+
+```
+node command2repo.js
+
+```
+Expected to work
+
