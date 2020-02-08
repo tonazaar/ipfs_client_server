@@ -15,7 +15,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "ipfs": "^0.40.0",
-    "ipfs-http-client": "^42.0.0",
+    "ipfs-http-client": "^40.0.0",
     "ipfsd-ctl": "^2.1.0"
   }
 }

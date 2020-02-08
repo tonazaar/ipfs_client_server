@@ -40,10 +40,18 @@ node twonodeselfprogram.js
 To check if it is working
 
 ```
-node command2repo.js
+ node command2repo.js 
+err=FetchError: request to http://localhost:5001/api/v0/add?stream-channels=true failed, reason: connect ECONNREFUSED 127.0.0.1:5001
+err=FetchError: request to http://localhost:5002/api/v0/add?stream-channels=true failed, reason: connect ECONNREFUSED 127.0.0.1:5002
+
 
 ```
 Expected to fail
+
+Note:-
+npm libraries to use
+ - "ipfs-http-client": "^40.0.0" (works)
+ - "ipfs-http-client": "^42.0.0" (does not work)
 
 7) Two nodes in one node.js app, reachable by clients
 
@@ -55,8 +63,16 @@ node twonodeservingprogram.js
 To check if it is working
 
 ```
-node command2repo.js
+node command2repo.js 
+repo2=[{"path":"tmp/myfile.txt","hash":"QmNz1UBzpdd4HfZ3qir3aPiRdX5a93XwTuDNyXRc6PKhWW","size":11},{"path":"tmp","hash":"QmWXdjNC362aPDtwHPUE9o2VMqPeNeCQuTBTv1NsKtwypg","size":67}]
+repo1=[{"path":"tmp/myfile.txt","hash":"QmNz1UBzpdd4HfZ3qir3aPiRdX5a93XwTuDNyXRc6PKhWW","size":11},{"path":"tmp","hash":"QmWXdjNC362aPDtwHPUE9o2VMqPeNeCQuTBTv1NsKtwypg","size":67}]
+
 
 ```
 Expected to work
+
+Note:-
+npm libraries to use
+ - "ipfs-http-client": "^40.0.0" (works)
+ - "ipfs-http-client": "^42.0.0" (does not work)
 
